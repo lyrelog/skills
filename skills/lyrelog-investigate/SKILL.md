@@ -2,7 +2,7 @@
 name: lyrelog-investigate
 description: Investigates errors, crashes and odd behaviour in an app that sends events to Lyrelog, using the lyrelog command-line tool (read only, JSON output). Use when the user asks why something fails in production, to look into a Lyrelog error or event, to see what a person did before an error, to compare app versions, or to query their Lyrelog logs, events, sessions or releases.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   docs: https://docs.lyrelog.com/ai-agents
 ---
 
@@ -52,7 +52,9 @@ Copy this checklist and work through it:
 ```bash
 # 1. Problems grouped by area and event name, worst first (default: last 7 days)
 lyrelog errors --since 7d
-#    each has count, players, versions, first/last seen, sample_event and sample_session
+#    each has count, players, versions, first/last seen, sample_event and sample_session,
+#    its state and its GitHub or Linear issue (CLI 1.2.0+: open ones by default;
+#    --status resolved|ignored|all for the others; a resolved one that came back is open again)
 
 # 2. One event: who, where, the app, the device, attributes and payload
 lyrelog events get <sample_event>
@@ -96,6 +98,9 @@ Most commands take the same filters as the dashboard's explorer:
 
 Quote values with `|` or `!`: the shell reads them otherwise.
 
+A search saved in the dashboard's explorer applies with `lyrelog events --view "<name>"` (CLI
+1.2.0+; `lyrelog insights views` lists them), its filters overridden by any flag given.
+
 Other commands worth knowing: `lyrelog sessions --errors`, `lyrelog sessions --with-event <name>`,
 `lyrelog releases` (each version's people, sessions and share without errors),
 `lyrelog insights trend <event> --by version`, `lyrelog insights funnel <a> <b> <c>`,
@@ -133,6 +138,13 @@ arrive (NDJSON, one object a line; stop it after a few seconds).
   `https://docs.lyrelog.com/read-api.md`.
 
 Full reference: `https://docs.lyrelog.com/cli/agents.md` and `https://docs.lyrelog.com/cli/reference.md`.
+
+## 5. Without the CLI
+
+An AI app (Claude, ChatGPT, Cursor, Claude Code) can ask Lyrelog through its MCP server instead,
+`https://app.lyrelog.com/mcp`, signed in as the person with OAuth: the same questions as tools
+(`list_errors`, `search_events`, `get_event`, `event_values`, `rate`...). See
+https://docs.lyrelog.com/mcp.md.
 
 ## Finish with
 
