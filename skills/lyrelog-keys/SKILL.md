@@ -2,7 +2,7 @@
 name: lyrelog-keys
 description: Explains which Lyrelog key or token goes where (ingest keys in apps, server keys on backends, read keys for scripts, access tokens for CI) and gets the user the right one safely, with the lyrelog CLI or the dashboard. Use when setting up Lyrelog in an app, a server or CI, when a Lyrelog key or LYRELOG_TOKEN is missing, invalid (401/403) or leaked, or when rotating or revoking one.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   docs: https://docs.lyrelog.com/ai-agents
 ---
 
@@ -71,7 +71,8 @@ change tokens.
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| Ingest answers `401` | Wrong, revoked or mistyped key; or a key of another project | Check the prefix and project in `lyrelog keys` (it lists names, types and last use, never secrets) |
+| Ingest answers `401` | Wrong, revoked or mistyped key | Check it against `lyrelog keys` (names, types and last use, never secrets) |
+| Events arrive in another project | A key of that project | A key belongs to one project: use one from `lyrelog keys -p <project>` |
 | Ingest answers `403` "this key cannot write events" | A read key used to send | Use an ingest key (apps) or a server key (servers) |
 | Ingest answers `429` | Over the plan's month, the project's rate or one address's daily share | `lyrelog usage` shows the month against the plan |
 | CLI exits 3 in CI | `LYRELOG_TOKEN` missing or expired | Make a new token |
