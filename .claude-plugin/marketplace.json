@@ -1,0 +1,12 @@
+{
+  "name": "lyrelog",
+  "owner": { "name": "Lyrelog", "email": "hello@lyrelog.com" },
+  "metadata": { "description": "Lyrelog's skills for coding agents." },
+  "plugins": [
+    {
+      "name": "lyrelog",
+      "source": "./",
+      "description": "Add the Lyrelog SDK to an app, investigate errors with the CLI, get keys and tokens, set up alerts."
+    }
+  ]
+}

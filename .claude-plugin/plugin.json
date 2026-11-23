@@ -1,0 +1,10 @@
+{
+  "name": "lyrelog",
+  "version": "1.0.0",
+  "description": "Skills for Lyrelog: add the SDK to an app, investigate errors with the CLI, get the right keys and tokens, and set up alerts.",
+  "author": { "name": "Lyrelog", "email": "hello@lyrelog.com", "url": "https://lyrelog.com" },
+  "homepage": "https://docs.lyrelog.com/ai-agents",
+  "repository": "https://github.com/lyrelog/skills",
+  "license": "MIT",
+  "keywords": ["lyrelog", "logging", "observability", "errors", "cli"]
+}
