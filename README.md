@@ -40,7 +40,7 @@ npx skills add lyrelog/skills
 With the [Lyrelog CLI](https://github.com/lyrelog/lyrelog-cli), which gets the newest from here (offline, the copy it carries):
 
 ```bash
-lyrelog skills install            # for every agent it finds on this computer
+lyrelog skills install            # asks where and for which agents, then remembers
 lyrelog skills                    # what's installed where, and if it's out of date
 lyrelog skills install --project  # into this project (.claude/skills and .agents/skills)
 ```
