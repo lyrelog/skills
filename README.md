@@ -14,7 +14,7 @@
 </p>
 
 [Agent skills](https://agentskills.io) that teach a coding agent how to work with
-[Lyrelog](https://lyrelog.com): add the SDK to an app, investigate an error with the CLI, get the
+[Lyrelog](https://lyrelog.com/agents): add the SDK to an app, investigate an error with the CLI, get the
 right key or token, and set up alerts. They follow the open Agent Skills format, so they work in
 Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode and the other agents that read
 `SKILL.md`.
