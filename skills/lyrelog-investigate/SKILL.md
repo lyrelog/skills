@@ -2,8 +2,8 @@
 name: lyrelog-investigate
 description: Investigates errors, crashes and odd behaviour in an app that sends events to Lyrelog, using the lyrelog command-line tool (read only, JSON output). Use when the user asks why something fails in production, to look into a Lyrelog error or event, to see what a person did before an error, to compare app versions, or to query their Lyrelog logs, events, sessions or releases.
 metadata:
-  version: "1.1.0"
-  docs: https://docs.lyrelog.com/ai-agents
+  version: "1.1.1"
+  docs: https://docs.lyrelog.com/skills
 ---
 
 # Investigate with the Lyrelog CLI

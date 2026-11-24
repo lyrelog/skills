@@ -2,8 +2,8 @@
 name: lyrelog-keys
 description: Explains which Lyrelog key or token goes where (ingest keys in apps, server keys on backends, read keys for scripts, access tokens for CI) and gets the user the right one safely, with the lyrelog CLI or the dashboard. Use when setting up Lyrelog in an app, a server or CI, when a Lyrelog key or LYRELOG_TOKEN is missing, invalid (401/403) or leaked, or when rotating or revoking one.
 metadata:
-  version: "1.0.1"
-  docs: https://docs.lyrelog.com/ai-agents
+  version: "1.0.2"
+  docs: https://docs.lyrelog.com/skills
 ---
 
 # Lyrelog keys and tokens

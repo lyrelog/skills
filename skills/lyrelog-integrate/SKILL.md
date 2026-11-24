@@ -2,8 +2,8 @@
 name: lyrelog-integrate
 description: Adds Lyrelog structured logging to an app or service, on iOS and macOS (Swift), Android (Kotlin or Java), React Native, Flutter, the browser or Node (JavaScript/TypeScript), Python, Go, the JVM, or anything else over HTTP. Use when the user asks to add or set up Lyrelog, send events or errors to Lyrelog, instrument an app with Lyrelog, or connect existing logging (slog, Python logging, Logback) to Lyrelog.
 metadata:
-  version: "1.0.0"
-  docs: https://docs.lyrelog.com/ai-agents
+  version: "1.0.1"
+  docs: https://docs.lyrelog.com/skills
 ---
 
 # Add Lyrelog to a project

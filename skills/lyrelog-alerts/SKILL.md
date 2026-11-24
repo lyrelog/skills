@@ -2,8 +2,8 @@
 name: lyrelog-alerts
 description: Sets up Lyrelog alerts for a project (a new kind of error, an error spike, a version that starts failing) by email, Slack or a signed webhook, and verifies webhook signatures in the receiving code. Use when the user wants to be told when their app breaks, asks to turn Lyrelog alerts on or tune them, connect Slack or a webhook to Lyrelog, or handle Lyrelog's alert webhook in their backend.
 metadata:
-  version: "1.0.0"
-  docs: https://docs.lyrelog.com/ai-agents
+  version: "1.0.1"
+  docs: https://docs.lyrelog.com/skills
 ---
 
 # Lyrelog alerts
