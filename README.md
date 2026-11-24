@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://docs.lyrelog.com/ai-agents"><b>Documentation</b></a> ·
+  <a href="https://docs.lyrelog.com/skills"><b>Documentation</b></a> ·
   <a href="https://docs.lyrelog.com/cli">CLI</a> ·
   <a href="https://lyrelog.com">lyrelog.com</a>
 </p>
@@ -27,6 +27,8 @@ Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot, OpenCode and the other a
 | [`lyrelog-alerts`](skills/lyrelog-alerts/SKILL.md) | Turn on new-error, spike and failing-version alerts, connect Slack or a signed webhook, verify the signature |
 
 ## Install
+
+Every way, and the folder each agent reads: [Install](https://docs.lyrelog.com/skills/install).
 
 With [skills.sh](https://skills.sh), for any agent (it asks which ones):
 
