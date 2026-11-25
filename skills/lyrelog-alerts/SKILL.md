@@ -17,7 +17,7 @@ environment (so development builds don't wake anyone):
 | `spike` | In the last hour an error happened at least 20 times and 3 times its usual hourly rate. At most every six hours per error |
 | `release` | The newest version with 50+ sessions has 5 points fewer error-free sessions than the one before. Once per version |
 
-**Plans:** Free has no alerts. Pro: email and Slack. Business: email, Slack and webhooks. A
+**Plans:** Free: email. Pro: email and Slack. Business: email, Slack and webhooks. A
 `403` with `"plan_limit": "alerts"` means the plan doesn't include it: tell the user, don't retry.
 
 The CLI has no `alerts` command yet: use `lyrelog api` (signed in as the person, see the
